@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: modelscope
+  namespace: default
+spec:
+  containers:
+    - name: main
+      image: modelscope-template:0.2
+  nodeName: worker3
